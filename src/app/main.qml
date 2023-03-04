@@ -1,6 +1,5 @@
 import QtQuick
-import QtQuick.Window 2.2
-import QtQuick.Controls 1.6
+import QtQuick.Controls
 
 Window {
     id: root
@@ -13,7 +12,7 @@ Window {
         anchors.centerIn: parent
     }
     color: "#161616"
-    title: "Qt Quick Extras Demo"
+    title: "Window Example - Demo"
 
 
     Label{
@@ -27,7 +26,7 @@ Window {
     }
     Button{
         id:button
-        text:qsTr("Click one")
+        text: "Click one"
         onClicked:back.changeValue(1)
     }
     Itemg{
