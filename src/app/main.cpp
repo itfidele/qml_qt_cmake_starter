@@ -3,7 +3,9 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QtWidgets>
+using namespace std;
 int main(int argc, char *argv[]) {
+
   QGuiApplication app(argc, argv);
   Back *back = new Back;
   QQmlApplicationEngine engine;
