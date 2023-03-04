@@ -4,9 +4,11 @@ Back::Back(QObject *parent) : QObject(parent) {}
 
 void Back::changeValue(int a) {
   if (a == 1) {
-    valueChanged("value is 1, from c++");
-  } else if (a == 2) {
-    valueChanged("value is 2, from c++");
+    num = num + 1;
+    valueChanged(QString::number(num));
+  } else if (a == -1) {
+    num = num - 1;
+    valueChanged(QString::number(num));
   } else {
     valueChanged("!!!!!");
   }

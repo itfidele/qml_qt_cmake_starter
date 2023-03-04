@@ -3,7 +3,7 @@ add_executable(helloworld
     back.cpp
 )
 
-target_link_libraries(helloworld PRIVATE Qt6::Widgets Qt6::Quick)
+target_link_libraries(helloworld PRIVATE Qt6::Widgets Qt6::Quick Qt6::QuickControls2)
 
 set_target_properties(helloworld PROPERTIES
     WIN32_EXECUTABLE ON
@@ -12,4 +12,4 @@ set_target_properties(helloworld PROPERTIES
 qt_add_qml_module(helloworld
     URI hello
     VERSION 1.0
-    QML_FILES main.qml Itemg.qml)
+    QML_FILES main.qml)
